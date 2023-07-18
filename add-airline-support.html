@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./add-airline-support.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>AirLine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!--------------------nav bar----------------------------------------------->
+
+        <ul class="nav">
+            <p>AirLine</p>
+            <li class="nav-li"><a href="./landing/landing.html">Home</a></li>
+            <li class="nav-li"><a href="./employee/employee.html">Employee</a></li>
+            <li class="nav-li"><a href="./airline/airline.html">Airline</a></li>
+            <li class="nav-li"><a href="./route/route.html">Route</a></li>
+            <li class="nav-li"><a href="./aircraft/airctaft.html">AirCraft</a></li>
+            <li class="nav-li"><a href="./transaction/transaction.html">Transaction</a></li>
+            <li class="nav-li"><a href="./add-qualifications.html">Employee Qualifications</a></li>
+            <li class="nav-li"><a href="./add-airline-support.html">Airline Support</a></li>
+        </ul>
+
+
+        <form method="">
+
+        <input type="text" placeholder="ID">
+        <div class="container">
+            <div class="select-btn">
+                <span class="btn-text">Select Qualifications</span>
+                <span class="arrow-down">
+                    <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                </span>
+            </div>
+
+            <ul class="list-items">
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">GED</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">HiSET</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">IGCSE</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">GCSE</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">High School Completion</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">NSC</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">BAC</span>
+                </li>
+
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">DES</span>
+                </li>
+
+            </ul>
+        </div>
+
+        </form>
+
+        <script>
+            const selectBtn = document.querySelector(".select-btn"),
+                  items = document.querySelectorAll(".item");
+
+            selectBtn.addEventListener("click", () => {
+                selectBtn.classList.toggle("open");
+            });
+
+            items.forEach(item => {
+                item.addEventListener("click",() => {
+                    item.classList.toggle("checked")
+                })
+            })
+        </script>
+
+    </body>
+    </html>

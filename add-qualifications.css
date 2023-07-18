@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url(./pics/twilight-cloud.jpg) no-repeat;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 20px;
+    padding: 10px;
+}
+  
+.nav-li:hover{
+   background-color: rgb(166, 161, 168);
+}
+
+.nav-li {
+    float: left;
+    border-right:1px solid rgb(78, 75, 75);
+    margin: 5px;
+}
+  
+.nav-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-li a:hover{
+    color: black;
+}
+
+.nav p {
+    float: left;
+    margin: 0;
+    color: rgb(203, 135, 235);
+    text-align: center;
+    padding: 14px 16px;
+    padding-left: 20px;
+    margin-left: 5px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.container{
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 80px auto 30px;
+}
+
+.select-btn{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px ;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    box-shadow: 0 5px 10px rgb(156, 156, 156);
+}
+
+.select-btn .btn-text{
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+
+.select-btn .arrow-dwn{
+    display: flex;
+    height: 21px;
+    width: 21px;
+    color: rgb(231, 231, 231);
+    font-size: 14px;
+    border-radius: 50%;
+    background:rgb(61, 106, 230);
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.item.checked .check-icon{
+    transform: scale(1);
+}
+
+.list-items{
+    position: relative;
+    background-color: rgb(201, 198, 192);
+    margin-top: 15px;
+    box-shadow: 0 5px 10px rgb(156, 156, 156);
+    border-radius: 8px;
+    padding: 16px;
+    display: none;
+}
+
+.select-btn.open ~ .list-items{
+    display: block;
+}
+
+.select-btn.open .arrow-dwn{
+    transform: rotate(-180deg);
+}
+
+.list-items .item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 15px ;
+    border-radius: 8px;
+}
+
+.list-items .item:hover{
+    background-color: rgb(65, 77, 87);
+}
+
+.item .item-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(37, 36, 36);
+}
+
+.item .checkbox{
+    height: 16px;
+    width: 16px;
+    border: 1.5px solid rgb(107, 105, 105);
+    border-radius: 4px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkbox .check-icon{
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+input{
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 80%;
+    padding: 15px 40px;
+    margin: 20px;
+    margin-left: 140px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(29, 29, 29);
+}
+
+::placeholder{
+    font-weight: 500;
+    color: rgba(22, 21, 21, 0.74);
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: rgb(118, 235, 180);
+    margin-left: 35px;
+
+}
